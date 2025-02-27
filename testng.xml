@@ -8,7 +8,7 @@
         <parameter name="browser" value="Chrome"/>
         <classes>
             <class name="Testcase.addProducts"/>
-            <class name="Testcase.invalidLogin"/>
+            <class name="Testcase.Invalidlogin"/>
         </classes>
     </test>
 </suite>
