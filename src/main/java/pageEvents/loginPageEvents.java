@@ -29,4 +29,12 @@ public class loginPageEvents {
         ele.getWebElement("ID",loginPageElements.loginButton).click();
         BaseClass.logger.log(Status.PASS, "Login button clicked");
     }
+    public void invalidLogin() throws IOException {
+        BaseClass.waitTillElementLoaded(By.xpath(loginPageElements.loginText),20);
+        ele.getWebElement("ID",loginPageElements.username).sendKeys("wrongID");
+        ele.getWebElement("ID",loginPageElements.password).sendKeys("secret_sauce");
+        BaseClass.attachScreenshot(Status.PASS,"Details entered successfully!");
+        ele.getWebElement("ID",loginPageElements.loginButton).click();
+        BaseClass.logger.log(Status.PASS, "Login button clicked");
+    }
 }
