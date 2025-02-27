@@ -37,4 +37,10 @@ public class loginPageEvents {
         ele.getWebElement("ID",loginPageElements.loginButton).click();
         BaseClass.logger.log(Status.PASS, "Login button clicked");
     }
+    public void verifyLoginError(){
+        BaseClass.waitTillElementLoaded(By.xpath(loginPageElements.loginError),20);
+        String errorText= ele.getWebElement("XPATH",loginPageElements.loginError).getText();
+        BaseClass.logger.log(Status.PASS,"Login failed successfully!");
+        BaseClass.logger.log(Status.INFO,"Error message: "+ errorText);
+    }
 }

@@ -17,5 +17,6 @@ public class Invalidlogin extends BaseClass {
 
         logger.log(Status.INFO,"Logging in...");
         loginPage.invalidLogin();
+        loginPage.verifyLoginError();
     }
 }
