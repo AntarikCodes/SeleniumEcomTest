@@ -39,3 +39,7 @@ To execute all test cases, clone the testing.xml and add all the testcases and t
 
 After execution, Extent Reports will be available in:
 target/extent-reports/
+
+**Contributing**
+
+Feel free to contribute by reporting issues or submitting pull requests!
