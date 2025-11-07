@@ -13,7 +13,7 @@ WebDriverManager (Driver Management)
 **#Project Structure**
 
 
-📂 src/main/java
+src/main/java
 
 base/ → Handles WebDriver setup & common utilities.
 
@@ -23,23 +23,23 @@ pageEvents/ → Contains actions & interactions with web elements.
 
 utils/ → Stores helper classes like listeners & configurations.
 
-📂 src/test/java
+src/test/java
 
 Testcase/ → Contains all the TestNG test cases.
 
 **#Test Cases Covered**
 
-⚪ Complete purchase flow – It validates correct login functionality,cart functionality,Checks total price matches expected calculation, Completes the full order process.
+ Complete purchase flow – It validates correct login functionality,cart functionality,Checks total price matches expected calculation, Completes the full order process.
 
-⚪ Invalid Login – Displays error for incorrect credentials.
+ Invalid Login – Displays error for incorrect credentials.
 
 **Setup & Execution**
 
 Prerequisites
 
-🔹 Install Java 11+
-🔹 Setup the POM.xml file
-🔹 Clone this repository:
+. Install Java 11+
+. Setup the POM.xml file
+. Clone this repository:
 
 Run Tests
 
@@ -51,3 +51,4 @@ target/extent-reports/
 **Contributing**
 
 Feel free to contribute by reporting issues or submitting pull requests!
+
